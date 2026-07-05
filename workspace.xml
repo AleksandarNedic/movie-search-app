@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5481740-546f-4bc8-8987-ec8494104046" name="Changes" comment="Implement movie search with OMDb API&#10;&#10;- Add search form&#10;- Fetch movie data from OMDb API&#10;- Display movie posters and basic information&#10;- Style movie cards using CSS Grid" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="2" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000000004767" />
+      <entry key="S2" value="1.00149268098778" />
+      <entry key="S5" value="1.088155586925216" />
+      <entry key="S10" value="1.4366381462129314" />
+      <entry key="S30" value="2.7468198892887763" />
+      <entry key="S60" value="4.181240345272197" />
+      <entry key="M2" value="8.039499126690785" />
+      <entry key="M5" value="23.58022687712654" />
+      <entry key="M10" value="47.353048245932285" />
+      <entry key="M15" value="67.58784236646302" />
+      <entry key="M30" value="107.99619612556003" />
+      <entry key="H1" value="143.84863368770564" />
+      <entry key="H2" value="168.3857416751901" />
+      <entry key="H4" value="182.83590177216968" />
+      <entry key="D1" value="196.17761395258304" />
+      <entry key="W1" value="198.59352825826946" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.0244997056926308E-182" />
+      <entry key="S2" value="3.400295541657605E-46" />
+      <entry key="S5" value="9.57327013137394E-19" />
+      <entry key="S10" value="1.599765913065655E-9" />
+      <entry key="S30" value="0.0024298525767203977" />
+      <entry key="S60" value="0.09002152727134541" />
+      <entry key="M2" value="0.5769243178615948" />
+      <entry key="M5" value="1.956426827276882" />
+      <entry key="M10" value="3.92091886032981" />
+      <entry key="M15" value="5.744868050142257" />
+      <entry key="M30" value="9.50992207597917" />
+      <entry key="H1" value="12.867640998945014" />
+      <entry key="H2" value="15.157156389120896" />
+      <entry key="H4" value="16.500976359424417" />
+      <entry key="D1" value="17.738579297339413" />
+      <entry key="W1" value="17.96235934181418" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="6.953370095688829E-4" />
+      <entry key="MS500" value="0.2335818367211489" />
+      <entry key="S2" value="0.6959854709136745" />
+      <entry key="S5" value="0.9356071048622093" />
+      <entry key="S10" value="1.331333570671692" />
+      <entry key="S30" value="2.6885334286108806" />
+      <entry key="S60" value="4.22613571152461" />
+      <entry key="M2" value="8.573930351866277" />
+      <entry key="M5" value="25.49013210528779" />
+      <entry key="M10" value="51.22687963635315" />
+      <entry key="M15" value="73.28759461588582" />
+      <entry key="M30" value="117.46996813152175" />
+      <entry key="H1" value="156.69223017965146" />
+      <entry key="H2" value="183.52884462690307" />
+      <entry key="H4" value="199.32925500729587" />
+      <entry key="D1" value="213.91483110934746" />
+      <entry key="W1" value="216.55569064058784" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3G63RFLbGSKlvBEGoyRmrtm6S4g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Korisnik/OneDrive/Desktop/IT skola/movie-search-app",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.25134.101" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5481740-546f-4bc8-8987-ec8494104046" name="Changes" comment="" />
+      <created>1783278182480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783278182480</updated>
+      <workItem from="1783278183865" duration="3813000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implement movie search with OMDb API&#10;&#10;- Add search form&#10;- Fetch movie data from OMDb API&#10;- Display movie posters and basic information&#10;- Style movie cards using CSS Grid">
+      <option name="closed" value="true" />
+      <created>1783282012476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783282012477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement movie search with OMDb API&#10;&#10;- Add search form&#10;- Fetch movie data from OMDb API&#10;- Display movie posters and basic information&#10;- Style movie cards using CSS Grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement movie search with OMDb API&#10;&#10;- Add search form&#10;- Fetch movie data from OMDb API&#10;- Display movie posters and basic information&#10;- Style movie cards using CSS Grid" />
+  </component>
+</project>
