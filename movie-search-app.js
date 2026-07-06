@@ -1,8 +1,24 @@
 const apiKey = '2c3f792a'
 //https://www.omdbapi.com/?apikey=${apiKey}&t=${title}
+
+//======================DOM=======================================
 const movieSearchInput = document.querySelector('#movie-search-input');
 const movieSearchForm = document.querySelector('#movie-search-form');
 const movieDisplayDiv = document.querySelector('#movie-search-results');
+const movieYearFilter = document.querySelector('#movie-filter-select');
+//================================================================
+
+
+const currentYear = new Date().getFullYear();
+
+for (let year=  currentYear; year >= 1900;  year--) {
+    const option = document.createElement('option');
+    option.textContent = year;
+
+    movieYearFilter.appendChild(option);
+}
+
+
 
 movieSearchForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -12,12 +28,20 @@ movieSearchForm.addEventListener('submit', (e) => {
 
 
 function moviesSearch(title) {
-    fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${title}`)
-    .then(res => res.json())
-    .then(json => {
-        movieDisplayDiv.innerHTML = '';
-        for (let i = 0; i < json.Search.length; i++) {
-            movieDisplayDiv.innerHTML += `
+    const releaseYear = movieYearFilter.value;
+    let url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${title}`;
+    if (releaseYear !== 'Release Year') {
+        url += `&y=${releaseYear}`;
+    }
+
+
+
+        fetch(url)
+            .then(res => res.json())
+            .then(json => {
+                movieDisplayDiv.innerHTML = '';
+                for (let i = 0; i < json.Search.length; i++) {
+                    movieDisplayDiv.innerHTML += `
              <div class="movieCard">
                    <img class="moviePoster" src="${json.Search[i].Poster}" alt="movie poster"/><br>
                    <h2>Title: ${json.Search[i].Title}<br></h2>
@@ -26,6 +50,13 @@ function moviesSearch(title) {
               
                `
 
-        }
-    })}
+                }
+            })}
+
+
+
+
+
+
+
 
