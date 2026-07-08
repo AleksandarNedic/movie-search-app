@@ -6,7 +6,9 @@ const movieSearchInput = document.querySelector('#movie-search-input');
 const movieSearchForm = document.querySelector('#movie-search-form');
 const movieDisplayDiv = document.querySelector('#movie-search-results');
 const movieYearFilter = document.querySelector('#movie-filter-select');
+const movieTypeFilter = document.querySelector('#movie-type-filter');
 //================================================================
+
 
 
 const currentYear = new Date().getFullYear();
@@ -29,10 +31,12 @@ movieSearchForm.addEventListener('submit', (e) => {
 
 function moviesSearch(title) {
     const releaseYear = movieYearFilter.value;
+    const movieType = movieTypeFilter.value;
     let url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${title}`;
-    if (releaseYear !== 'Release Year') {
-        url += `&y=${releaseYear}`;
-    }
+    if (releaseYear !== 'Release Year' ) {
+        url += `&y=${releaseYear}`;}
+         if (movieType !== 'Type' ) {
+            url += `&type=${movieType}`;}
 
 
 
