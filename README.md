@@ -8,7 +8,7 @@ A simple web application that allows users to search for movies and view basic i
 
 ### Planned Features
 
-- [ ] Filter movies by release year
+- [x] Filter movies by release year
 - [ ] Filter movies by type (Movie, Series, Episode)
 - [ ] Movie details page with additional information
 - [ ] Watch the official trailer
