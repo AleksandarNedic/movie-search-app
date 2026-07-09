@@ -1,0 +1,10 @@
+@media(max-width:700px){
+
+    .card-body{
+        flex-direction:column;
+    }
+
+}
+body {
+    margin: 30px;
+}

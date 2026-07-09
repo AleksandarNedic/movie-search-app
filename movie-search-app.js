@@ -1,6 +1,7 @@
 const apiKey = '2c3f792a'
 //https://www.omdbapi.com/?apikey=${apiKey}&t=${title}
 
+
 //======================DOM=======================================
 const movieSearchInput = document.querySelector('#movie-search-input');
 const movieSearchForm = document.querySelector('#movie-search-form');
@@ -48,7 +49,9 @@ function moviesSearch(title) {
                     movieDisplayDiv.innerHTML += `
              <div class="movieCard">
                    <img class="moviePoster" src="${json.Search[i].Poster}" alt="movie poster"/><br>
-                   <h2>Title: ${json.Search[i].Title}<br></h2>
+                   <a href="Movie-details-page.html?id=${json.Search[i].imdbID}">
+                    <h2>Title: ${json.Search[i].Title}<br></h2>
+                    </a>
                     <p>Year: ${json.Search[i].Year}<br></p>
               </div>
               
@@ -56,8 +59,6 @@ function moviesSearch(title) {
 
                 }
             })}
-
-
 
 
 
