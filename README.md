@@ -1,4 +1,20 @@
-A simple web application that allows users to search for movies and view basic information such as title, year, and poster using a public API.
+# Movie Search App
+
+A JavaScript application using OMDb API and TMDB API.
+
+## Features
+
+- Search movies
+- Filter by year and type
+- View movie details
+- Watch trailers
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- APIs
 
 ## 🚀 Roadmap
 
@@ -9,7 +25,7 @@ A simple web application that allows users to search for movies and view basic i
 ### Planned Features
 
 - [x] Filter movies by release year
-- [ ] Filter movies by type (Movie, Series, Episode)
-- [ ] Movie details page with additional information
-- [ ] Watch the official trailer
+- [x] Filter movies by type (Movie, Series, Episode)
+- [x] Movie details page with additional information
+- [x] Watch the official trailer
 
