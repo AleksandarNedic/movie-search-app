@@ -1,9 +1,15 @@
+
+    /* ====================== BODY ====================== */
+
 body {
     margin: 30px;
     margin-top: 100px;
-    background: #0F172A ;;
-
+    background: #0F172A;
 }
+
+
+/* ====================== HEADER ====================== */
+
 .movie-search-app-header {
     display: flex;
     justify-content: center;
@@ -11,46 +17,20 @@ body {
     margin-bottom: 5rem;
 }
 
+
 .movieTitleDiv {
     display: flex;
     justify-content: center;
 }
 
+
 .appTitle {
- color: #F8FAFC;
-}
-#movie-search-results {
-       display: flex;
-    flex-direction: column;
-    gap:25px;
-    max-width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-
-
-}
-#movie-search-button {
-    background: #3B82F6;
-    height: 30px;
-    width: 80px;
-    border-radius: 16px;
-    border-width: 0px;
-    color: white;
-}
-#movie-search-button:hover {
-    background: #2563EB;
-    cursor: pointer;
+    color: #F8FAFC;
 }
 
 
-.moviePoster {
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 2/3;
-    display: block;
+/* ====================== SEARCH ====================== */
 
-}
 #movie-search-input {
     width: 500px;
     height: 20px;
@@ -60,9 +40,31 @@ body {
     background: #334155;
     color: white;
 }
+
+
+#movie-search-button {
+    background: #3B82F6;
+    height: 30px;
+    width: 80px;
+    border-radius: 16px;
+    border-width: 0px;
+    color: white;
+}
+
+
+#movie-search-button:hover {
+    background: #2563EB;
+    cursor: pointer;
+}
+
+
 #movie-search-button::placeholder {
     color: #CBD5E1;
 }
+
+
+/* ====================== FILTERS ====================== */
+
 #filters {
     margin-top: 20px;
     display: flex;
@@ -72,6 +74,7 @@ body {
     flex-wrap: wrap;
 }
 
+
 #filters p {
     width: 100%;
     text-align: center;
@@ -79,6 +82,7 @@ body {
     font-weight: bold;
     margin: 0 0 10px;
 }
+
 
 #filters select {
     width: 170px;
@@ -92,6 +96,20 @@ body {
 }
 
 
+/* ====================== MOVIE RESULTS ====================== */
+
+#movie-search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ====================== MOVIE CARD ====================== */
 
 .movieCard {
     display: flex;
@@ -104,6 +122,8 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 .movieCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
@@ -112,6 +132,8 @@ body {
 }
 
 
+/* ====================== MOVIE IMAGE ====================== */
+
 .moviePoster {
     width: 200px;
     height: 300px;
@@ -119,17 +141,17 @@ body {
 }
 
 
+/* ====================== MOVIE INFO ====================== */
+
 .movieInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 
 
 .movieInfo h2 {
-
     text-align: center;
     width: 200px;
     height: 50px;
@@ -138,14 +160,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-.textLink {
-    text-decoration: none;
-}
-
-.movieInfo a {
-    text-decoration: none;
 }
 
 
@@ -154,5 +168,17 @@ body {
     color: #444;
     line-height: 1.5;
     text-align: center;
-
 }
+
+
+.movieInfo a {
+    text-decoration: none;
+}
+
+
+/* ====================== LINKS ====================== */
+
+.textLink {
+    text-decoration: none;
+}
+
