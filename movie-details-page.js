@@ -17,42 +17,38 @@ fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${TmdbApiKey
             .then(response => response.json())
             .then(movieData => {
                 divElement.innerHTML = `
-    <div class="MovieDetailsCard">
-    <div class="card-title">
-      <h3 id="movieTitle" >${movieData.Title}</h3>
-    </div>
-   <div class="card-body">
-   <div class="poster-div">
-      <img  alt='Movie Poster' id="moviePoster" src="${movieData.Poster}">
-       <iframe 
+ <div class="movieDetailsCard">
+
+    <div class="mediaSection">
+        <img class="moviePoster"
+             src="${movieData.Poster}"
+             alt="Movie Poster">
+
+        <iframe
+            class="movieTrailer"
             src="https://www.youtube.com/embed/${trailerKey}">
-            </iframe>
-      
-      <div class="poster-info">
-      <div class="ratingAndTitle">
-      <h2>${movieData.Title}</h2>
-      <p>⭐ IMDb Rating: ${movieData.imdbRating}</p>
-      </div>
-      
-      <p>📅 ${movieData.Year}</p>
-      <p>🎬 ${movieData.Genre}</p>
-      <p>⏱ ${movieData.Runtime}</p>
-      <p>🎥 ${movieData.Director}</p>
-      <div class="plot">
-    <h2>Plot</h2>
-    <p>${movieData.Plot}</p>
-</div>
-      
-      
-      
-      
-</div>
-   </div>
-    
-    
-   </div>
-   
-    
+        </iframe>
+    </div>
+
+    <div class="movieInfo">
+
+        <h2>${movieData.Title}</h2>
+
+        <div class="movieMeta">
+            <p>⭐ IMDb: ${movieData.imdbRating}</p>
+            <p>📅 ${movieData.Year}</p>
+            <p>🎬 ${movieData.Genre}</p>
+            <p>⏱ ${movieData.Runtime}</p>
+            <p>🎥 ${movieData.Director}</p>
+        </div>
+
+        <div class="plot">
+            <h3>Plot</h3>
+            <p>${movieData.Plot}</p>
+        </div>
+
+    </div>
+
 </div>
    
     `

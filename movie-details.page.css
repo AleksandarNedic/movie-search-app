@@ -1,10 +1,78 @@
-@media(max-width:700px){
+@media (max-width: 768px) {
 
-    .card-body{
-        flex-direction:column;
+    .movieDetailsCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .moviePoster {
+        width: 250px;
     }
 
 }
 body {
-    margin: 30px;
+
+        margin: 30px;
+        margin-top: 100px;
+        background: #0F172A;
+
+}
+#movie-details {
+    max-width: 900px;
+    margin: 40px auto;
+}
+.movieDetailsCard {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+}
+
+.mediaSection {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.moviePoster {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.movieTrailer {
+    width: 100%;
+    height: 320px;
+    border-radius: 12px;
+    border: none;
+}
+
+.movieInfo {
+    margin-top: 35px;
+    text-align: center;
+    color: #222;
+}
+
+.movieInfo h2 {
+    color: #2563EB;
+    font-size: 32px;
+}
+
+.movieInfo p {
+    line-height: 1.7;
+}
+.backButton {
+    color: #F8FAFC;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.backButton:hover {
+    color: #3B82F6;
 }
