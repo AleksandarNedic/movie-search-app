@@ -1,42 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Movie Search App</title>
     <link rel="stylesheet" href="movie-search-app.css" />
 </head>
+
 <body>
 
-
 <div id="movie-search-app">
+
     <div class="movieTitleDiv">
         <h1 class="appTitle">Movie Search App</h1>
     </div>
-  <div class="movie-search-app-header">
-      <form id="movie-search-form">
-          <input id="movie-search-input" type="text" placeholder="Search Movies..." />
-          <button id="movie-search-button">Search</button>
-          <div id="filters">
-              <select id="movie-filter-select">
-                  <option value="number">Release Year</option>
-              </select>
-              <select id="movie-type-filter">
-                  <option  id="movie-type">Type</option>
-                  <option>Movie</option>
-                  <option>Series</option>
-                  <option>Episode</option>
-              </select>
-          </div>
 
-      </form>
-  </div>
+    <div class="movie-search-app-header">
 
+        <form id="movie-search-form">
+
+            <input
+                    id="movie-search-input"
+                    type="text"
+                    placeholder="Search Movies..."
+            />
+
+            <button id="movie-search-button">
+                Search
+            </button>
+
+            <div id="filters">
+
+                <select id="movie-filter-select">
+                    <option value="number">Release Year</option>
+                </select>
+
+                <select id="movie-type-filter">
+                    <option id="movie-type">Type</option>
+                    <option>Movie</option>
+                    <option>Series</option>
+                    <option>Episode</option>
+                </select>
+
+            </div>
+
+        </form>
+
+    </div>
 
     <div id="movie-search-results"></div>
+
 </div>
 
 
-
 <script src="movie-search-app.js"></script>
+
 </body>
+
 </html>
+```
