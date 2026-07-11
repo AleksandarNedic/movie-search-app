@@ -44,19 +44,27 @@ function moviesSearch(title) {
         fetch(url)
             .then(res => res.json())
             .then(json => {
+                console.log(json);
                 movieDisplayDiv.innerHTML = '';
                 for (let i = 0; i < json.Search.length; i++) {
                     movieDisplayDiv.innerHTML += `
-             <div class="movieCard">
-                   <img class="moviePoster" src="${json.Search[i].Poster}" alt="movie poster"/><br>
-                   <a href="Movie-details-page.html?id=${json.Search[i].imdbID}">
-                    <h2>Title: ${json.Search[i].Title}<br></h2>
-                    </a>
-                    <p>Year: ${json.Search[i].Year}<br></p>
-              </div>
-              
-               `
+ <a class="textLink" href="Movie-details-page.html?id=${json.Search[i].imdbID}">
+            <div class="movieCard">
 
+    <img class="moviePoster" src="${json.Search[i].Poster}" alt="movie poster">
+
+    <div class="movieInfo">
+       
+            <h2>${json.Search[i].Title}</h2>
+        
+
+        <p>Release date: ${json.Search[i].Year}</p>
+
+      
+    </div>
+
+</div> 
+                        </a>`
                 }
             })}
 

@@ -1,5 +1,8 @@
 body {
     margin: 30px;
+    margin-top: 100px;
+    background: #0F172A ;;
+
 }
 .movie-search-app-header {
     display: flex;
@@ -8,24 +11,148 @@ body {
     margin-bottom: 5rem;
 }
 
-#movie-search-results {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 40px;
-
-
-}
-.movieCard {
+.movieTitleDiv {
     display: flex;
+    justify-content: center;
+}
+
+.appTitle {
+ color: #F8FAFC;
+}
+#movie-search-results {
+       display: flex;
     flex-direction: column;
+    gap:25px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+
 
 }
+#movie-search-button {
+    background: #3B82F6;
+    height: 30px;
+    width: 80px;
+    border-radius: 16px;
+    border-width: 0px;
+    color: white;
+}
+#movie-search-button:hover {
+    background: #2563EB;
+    cursor: pointer;
+}
+
+
 .moviePoster {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 2/3;
     display: block;
+
+}
+#movie-search-input {
+    width: 500px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    border-width: 0px;
+    background: #334155;
+    color: white;
+}
+#movie-search-button::placeholder {
+    color: #CBD5E1;
+}
+#filters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#filters p {
+    width: 100%;
+    text-align: center;
+    color: #F8FAFC;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+#filters select {
+    width: 170px;
+    height: 35px;
+    background: #334155;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+
+.movieCard {
+    display: flex;
+    gap: 25px;
+    background: white;
+    padding: 20px;
+    margin: 25px auto;
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movieCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    cursor: pointer;
+    background: #dddddd;
+}
+
+
+.moviePoster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.movieInfo h2 {
+
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.textLink {
+    text-decoration: none;
+}
+
+.movieInfo a {
+    text-decoration: none;
+}
+
+
+.movieInfo p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    text-align: center;
 
 }
